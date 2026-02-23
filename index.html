@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da</title>
+<meta name="description" content="Giyim, bilgisayar, cep telefonu, kozmetik ve daha fazlası en uygun fiyatlarla Trendyol'da."/>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="ty-container topbar__inner">
+    <ul class="topbar__links">
+      <li><a href="#">İndirim Kuponlarım</a></li>
+      <li><a href="#">Trendyol'da Satış Yap</a></li>
+      <li><a href="#">Hakkımızda</a></li>
+    </ul>
+    <div class="topbar__right">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Yardım &amp; Destek
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="ty-container header__inner">
+
+    <!-- LOGO -->
+    <a href="#" class="header__logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="152" height="38" viewBox="0 0 152 38">
+        <!-- T icon circle -->
+        <circle cx="19" cy="19" r="19" fill="#FF6000"/>
+        <text x="19" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="white">t</text>
+        <!-- trendyol text -->
+        <text x="44" y="26" font-family="'Source Sans 3',Arial,sans-serif" font-size="22" font-weight="700" fill="#FF6000" letter-spacing="-0.5">trendyol</text>
+      </svg>
+    </a>
+
+    <!-- SEARCH -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Ürün, kategori veya marka ara" autocomplete="off" class="search-bar__input"/>
+      <button class="search-bar__btn" id="search-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+
+    <!-- NAV ICONS -->
+    <nav class="header__nav">
+      <!-- Giriş Yap -->
+      <div class="nav-item user-nav" id="nav-user">
+        <div class="nav-item__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <span class="nav-item__label">Giriş Yap</span>
+        <svg class="nav-item__caret" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        <!-- Login dropdown -->
+        <div class="login-dropdown">
+          <button class="login-dropdown__btn login-dropdown__btn--primary">Giriş Yap</button>
+          <button class="login-dropdown__btn login-dropdown__btn--secondary">Üye Ol</button>
+          <ul class="login-dropdown__links">
+            <li><a href="#">Siparişlerim</a></li>
+            <li><a href="#">Favorilerim</a></li>
+            <li><a href="#">Puanlarım &amp; Kuponlarım</a></li>
+            <li><a href="#">Trendyol Plus</a></li>
+            <li><a href="#">Öğrenci Programı</a></li>
+            <li><a href="#">Değerlendirmelerim</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Favorilerim -->
+      <a href="#" class="nav-item" id="nav-fav">
+        <div class="nav-item__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <span class="nav-item__label">Favorilerim</span>
+      </a>
+      <!-- Sepetim -->
+      <a href="#" class="nav-item" id="nav-basket">
+        <div class="nav-item__icon basket-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="basket-badge" id="basket-badge" style="display:none">0</span>
+        </div>
+        <span class="nav-item__label">Sepetim</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav" id="bottom-nav">
+  <div class="ty-container bottom-nav__inner">
+
+    <!-- Kategoriler with mega-menu -->
+    <div class="cat-tab" id="cat-tab">
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor">
+        <rect y="0" width="16" height="2" rx="1"/>
+        <rect y="5" width="16" height="2" rx="1"/>
+        <rect y="10" width="16" height="2" rx="1"/>
+      </svg>
+      <span>Kategoriler</span>
+
+      <!-- MEGA MENU -->
+      <div class="mega-menu" id="mega-menu">
+        <div class="mega-menu__left">
+          <a href="#" class="mega-menu__cat active" data-cat="kadin">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/kadin.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Kadın</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="erkek">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/erkek.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Erkek</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="anne">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/cocuk.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Anne &amp; Çocuk</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="ev">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/ev-yasam.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Ev &amp; Yaşam</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="super">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/supermarket.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Süpermarket</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="kozmetik">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/kozmetik.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Kozmetik</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="ayakkabi">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/ayakkabi.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Ayakkabı &amp; Çanta</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="elektronik">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/elektronik.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Elektronik</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="saat">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/saat-aksesuar.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Saat &amp; Aksesuar</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="spor">
+            <img src="https://cdn.dsmcdn.com/v2/Assets/kategori-ikonlari/spor-outdoor.png" onerror="this.style.display='none'" width="22" height="22" alt=""/>
+            <span>Spor &amp; Outdoor</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="kitap">
+            <span>Kitap, Müzik, Film, Oyun</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="oyuncak">
+            <span>Oyuncak</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="otomotiv">
+            <span>Otomotiv &amp; Motosiklet</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="yapi">
+            <span>Yapı Market</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="kirtasiye">
+            <span>Kırtasiye &amp; Ofis</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="evcil">
+            <span>Evcil Hayvan</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="bahce">
+            <span>Bahçe &amp; Tarım</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="bebek">
+            <span>Bebek</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+          <a href="#" class="mega-menu__cat" data-cat="gida">
+            <span>Gıda</span>
+            <svg class="mm-arrow" width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </a>
+        </div>
+
+        <div class="mega-menu__right" id="mega-menu-right">
+          <!-- content filled by JS -->
+        </div>
+      </div><!-- /mega-menu -->
+    </div>
+
+    <!-- Section items -->
+    <div class="bottom-nav__sections">
+      <a href="#" class="bn-item">Kadın</a>
+      <a href="#" class="bn-item">Erkek</a>
+      <a href="#" class="bn-item">Anne &amp; Çocuk</a>
+      <a href="#" class="bn-item">Ev &amp; Yaşam</a>
+      <a href="#" class="bn-item">Süpermarket</a>
+      <a href="#" class="bn-item">Kozmetik</a>
+      <a href="#" class="bn-item">Ayakkabı &amp; Çanta</a>
+      <a href="#" class="bn-item">Elektronik</a>
+      <a href="#" class="bn-item">Saat &amp; Aksesuar</a>
+      <a href="#" class="bn-item">Spor &amp; Outdoor</a>
+      <a href="#" class="bn-item bn-item--flash">Flaş Ürünler <span class="badge-yeni">Yeni</span></a>
+      <a href="#" class="bn-item bn-item--bestseller">Çok Satanlar <span class="badge-yeni">Yeni</span></a>
+      <a href="#" class="bn-item">Bugün Fiyatı Düşenler</a>
+      <a href="#" class="bn-item">Yemek</a>
+      <a href="#" class="bn-item bn-item--plus">Ayrıcalıkları Keşfet</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="ty-main">
+  <div class="ty-container">
+
+    <!-- HERO BANNER SLIDER -->
+    <section class="hero-slider">
+      <div class="hero-slides" id="hero-slides">
+        <div class="hero-slide active">
+          <a href="#"><img src="https://cdn.dsmcdn.com/homepage/prod/2026-01-14/73150ce8-26ac-4b50-9f89-81b03aaa6dd0.png" alt="Kampanya" class="hero-slide__img" onerror="this.parentElement.style.background='linear-gradient(135deg,#FF6000 0%,#ff9a00 100%)';this.style.display='none'"/></a>
+        </div>
+        <div class="hero-slide">
+          <a href="#"><img src="https://cdn.dsmcdn.com/homepage/prod/2026-01-14/7fc9d37a-53aa-4d5d-b004-afa01ef4a849.png" alt="Kampanya" class="hero-slide__img" onerror="this.parentElement.style.background='linear-gradient(135deg,#e91e8c,#ff5722)';this.style.display='none'"/></a>
+        </div>
+        <div class="hero-slide">
+          <a href="#"><img src="https://cdn.dsmcdn.com/homepage/prod/2026-01-14/73c4b277-8359-4824-8bf3-f866e87147c0.png" alt="Kampanya" class="hero-slide__img" onerror="this.parentElement.style.background='linear-gradient(135deg,#1976d2,#42a5f5)';this.style.display='none'"/></a>
+        </div>
+        <div class="hero-slide">
+          <a href="#"><img src="https://cdn.dsmcdn.com/homepage/prod/2026-01-14/34bee594-97fd-4340-a2a2-c291fef91a38.png" alt="Kampanya" class="hero-slide__img" onerror="this.parentElement.style.background='linear-gradient(135deg,#388e3c,#66bb6a)';this.style.display='none'"/></a>
+        </div>
+      </div>
+      <button class="hero-prev" id="hero-prev">&#8249;</button>
+      <button class="hero-next" id="hero-next">&#8250;</button>
+      <div class="hero-dots" id="hero-dots">
+        <span class="hero-dot active"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+      </div>
+    </section>
+
+    <!-- EVENT BANNERS (5-grid) -->
+    <section class="event-banners">
+      <a href="#" class="ev-banner"><img src="https://cdn.dsmcdn.com/ty1000322/tr-event-banner/2d2f311e-e14e-4d5d-9320-b9525ec263f9tr_3280846.jpeg" alt="" onerror="this.parentElement.style.background='#FF6000';this.remove()"/></a>
+      <a href="#" class="ev-banner"><img src="https://cdn.dsmcdn.com/ty1000327/tr-event-banner/d4192f00-812a-4e38-accc-fc40911b2bbdtr_3280615.jpeg" alt="" onerror="this.parentElement.style.background='#e91e8c';this.remove()"/></a>
+      <a href="#" class="ev-banner"><img src="https://cdn.dsmcdn.com/ty1000315/tr-event-banner/9b6765ea-5a08-4c89-990d-38d4c061ff8ctr_3280589.jpeg" alt="" onerror="this.parentElement.style.background='#1976d2';this.remove()"/></a>
+      <a href="#" class="ev-banner"><img src="https://cdn.dsmcdn.com/ty1000321/tr-event-banner/5e5e7961-17c1-43e6-afcb-12772cfb6b02tr_3280601.jpeg" alt="" onerror="this.parentElement.style.background='#388e3c';this.remove()"/></a>
+      <a href="#" class="ev-banner"><img src="https://cdn.dsmcdn.com/ty1000324/tr-event-banner/40272f22-6b23-41cf-be16-5e78ed254bdetr_3280596.jpeg" alt="" onerror="this.parentElement.style.background='#7b1fa2';this.remove()"/></a>
+    </section>
+
+    <!-- POPULAR PRODUCTS -->
+    <section class="prod-section">
+      <div class="prod-section__head">
+        <h2 class="prod-section__title">Popüler Ürünler</h2>
+        <a href="#" class="prod-section__all">Tümünü Gör</a>
+      </div>
+      <div class="prod-grid" id="popular-grid"></div>
+    </section>
+
+    <!-- ALSO LIKED -->
+    <section class="prod-section" style="margin-top:8px">
+      <div class="prod-section__head">
+        <h2 class="prod-section__title">Bunlar da İlginizi Çekebilir</h2>
+        <a href="#" class="prod-section__all">Tümünü Gör</a>
+      </div>
+      <div class="prod-grid" id="liked-grid"></div>
+    </section>
+
+    <!-- SEO LINKS -->
+    <section class="seo-box">
+      <h3 class="seo-box__title">Bunlar da İlginizi Çekebilir</h3>
+      <div class="seo-box__links">
+        <a href="#">iPhone 17</a><a href="#">iPhone 17 Air</a><a href="#">iPhone 17 Pro</a>
+        <a href="#">iPhone 16</a><a href="#">Samsung Galaxy S25</a><a href="#">Adidas Samba</a>
+        <a href="#">Nike Air Force</a><a href="#">Makyaj Seti</a><a href="#">Playstation 5</a>
+        <a href="#">UGG</a><a href="#">IKEA</a><a href="#">Decathlon</a>
+        <a href="#">Bargello</a><a href="#">Cep Telefonu</a><a href="#">iPhone 13</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="ty-container">
+    <div class="footer__top">
+      <div class="footer__col footer__col--brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="32" viewBox="0 0 152 38">
+          <circle cx="19" cy="19" r="19" fill="#FF6000"/>
+          <text x="19" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="white">t</text>
+          <text x="44" y="26" font-family="'Source Sans 3',Arial,sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="-0.5">trendyol</text>
+        </svg>
+        <p>© 2025 DSM Grup Danışmanlık İletişim ve Satış Tic. A.Ş.</p>
+        <div class="footer__apps">
+          <a href="#" class="footer__app-btn">📱 App Store</a>
+          <a href="#" class="footer__app-btn">🤖 Google Play</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Kurumsal</div>
+        <a href="#">Hakkımızda</a><a href="#">Kariyer</a><a href="#">Sürdürülebilirlik</a><a href="#">İletişim</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Alışveriş</div>
+        <a href="#">Kampanya Detayları</a><a href="#">Flaş İndirimler</a><a href="#">Hediye Kartları</a><a href="#">Ayrıcalıkları Keşfet</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Satıcı Ol</div>
+        <a href="#">Trendyol'da Satış Yap</a><a href="#">Temel Kavramlar</a><a href="#">Trendyol Akademi</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Yardım</div>
+        <a href="#">Sıkça Sorulan Sorular</a><a href="#">Nasıl İade Edebilirim?</a><a href="#">Güvenli Alışveriş</a><a href="#">Kişisel Verilerin Korunması</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__payments">
+        <span>Ödeme Yöntemleri:</span>
+        <span class="pay-tag">VISA</span><span class="pay-tag">Mastercard</span><span class="pay-tag">Troy</span><span class="pay-tag">Havale</span><span class="pay-tag">Kapıda Ödeme</span>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Kullanım Koşulları</a><a href="#">Çerez Politikası</a><a href="#">Gizlilik Politikası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><span id="toast-msg"></span></div>
+
+<script src="main.js"></script>
+</body>
+</html>
