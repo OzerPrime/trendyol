@@ -161,10 +161,10 @@ function renderMegaRight(catKey) {
   const data = catData[catKey];
   if (!data) return;
   const right = document.getElementById('mega-menu-right');
-  let html = `<div class="mm-title">${data.title}</div><div class="mm-cols">`;
+  let html = `<div class="mm-title"><a href="category.html?cat=${catKey}" style="color:inherit">${data.title}</a></div><div class="mm-cols">`;
   data.cols.forEach(col => {
     html += `<div class="mm-group"><div class="mm-group__head">${col.head}</div>`;
-    col.links.forEach(lnk => { html += `<a href="#">${lnk}</a>`; });
+    col.links.forEach(lnk => { html += `<a href="category.html?cat=${catKey}">${lnk}</a>`; });
     html += `</div>`;
   });
   html += `</div>`;

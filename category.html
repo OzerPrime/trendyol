@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title id="page-title">Trendyol</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="ty-container topbar__inner">
+    <ul class="topbar__links">
+      <li><a href="#">İndirim Kuponlarım</a></li>
+      <li><a href="#">Trendyol'da Satış Yap</a></li>
+      <li><a href="#">Hakkımızda</a></li>
+    </ul>
+    <div class="topbar__right">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Yardım &amp; Destek
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="ty-container header__inner">
+    <a href="index.html" class="header__logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="152" height="38" viewBox="0 0 152 38">
+        <circle cx="19" cy="19" r="19" fill="#FF6000"/>
+        <text x="19" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="white">t</text>
+        <text x="44" y="26" font-family="'Source Sans 3',Arial,sans-serif" font-size="22" font-weight="700" fill="#FF6000" letter-spacing="-0.5">trendyol</text>
+      </svg>
+    </a>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Ürün, kategori veya marka ara" autocomplete="off" class="search-bar__input"/>
+      <button class="search-bar__btn" id="search-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <nav class="header__nav">
+      <div class="nav-item user-nav" id="nav-user">
+        <div class="nav-item__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <span class="nav-item__label">Giriş Yap</span>
+        <svg class="nav-item__caret" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        <div class="login-dropdown">
+          <button class="login-dropdown__btn login-dropdown__btn--primary">Giriş Yap</button>
+          <button class="login-dropdown__btn login-dropdown__btn--secondary">Üye Ol</button>
+          <ul class="login-dropdown__links">
+            <li><a href="#">Siparişlerim</a></li>
+            <li><a href="#">Favorilerim</a></li>
+            <li><a href="#">Puanlarım &amp; Kuponlarım</a></li>
+            <li><a href="#">Trendyol Plus</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="nav-item" id="nav-fav">
+        <div class="nav-item__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <span class="nav-item__label">Favorilerim</span>
+      </a>
+      <a href="#" class="nav-item" id="nav-basket">
+        <div class="nav-item__icon basket-icon-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="basket-badge" id="basket-badge" style="display:none">0</span>
+        </div>
+        <span class="nav-item__label">Sepetim</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav" id="bottom-nav">
+  <div class="ty-container bottom-nav__inner">
+    <div class="cat-tab" id="cat-tab">
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><rect y="0" width="16" height="2" rx="1"/><rect y="5" width="16" height="2" rx="1"/><rect y="10" width="16" height="2" rx="1"/></svg>
+      <span>Kategoriler</span>
+      <div class="mega-menu" id="mega-menu">
+        <div class="mega-menu__left" id="mega-left"></div>
+        <div class="mega-menu__right" id="mega-menu-right"></div>
+      </div>
+    </div>
+    <div class="bottom-nav__sections">
+      <a href="category.html?cat=kadin" class="bn-item">Kadın</a>
+      <a href="category.html?cat=erkek" class="bn-item">Erkek</a>
+      <a href="category.html?cat=anne" class="bn-item">Anne &amp; Çocuk</a>
+      <a href="category.html?cat=ev" class="bn-item">Ev &amp; Yaşam</a>
+      <a href="category.html?cat=super" class="bn-item">Süpermarket</a>
+      <a href="category.html?cat=kozmetik" class="bn-item">Kozmetik</a>
+      <a href="category.html?cat=ayakkabi" class="bn-item">Ayakkabı &amp; Çanta</a>
+      <a href="category.html?cat=elektronik" class="bn-item">Elektronik</a>
+      <a href="category.html?cat=saat" class="bn-item">Saat &amp; Aksesuar</a>
+      <a href="category.html?cat=spor" class="bn-item">Spor &amp; Outdoor</a>
+      <a href="category.html?cat=flash" class="bn-item bn-item--flash">Flaş Ürünler <span class="badge-yeni">Yeni</span></a>
+      <a href="category.html?cat=coksatan" class="bn-item bn-item--bestseller">Çok Satanlar <span class="badge-yeni">Yeni</span></a>
+      <a href="category.html?cat=dusen" class="bn-item">Bugün Fiyatı Düşenler</a>
+      <a href="category.html?cat=yemek" class="bn-item">Yemek</a>
+      <a href="category.html?cat=plus" class="bn-item bn-item--plus">Ayrıcalıkları Keşfet</a>
+    </div>
+  </div>
+</nav>
+
+<!-- CATEGORY PAGE CONTENT -->
+<main class="ty-main">
+  <div class="ty-container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Anasayfa</a>
+      <span class="bc-sep">›</span>
+      <span id="bc-current">Kategori</span>
+    </div>
+
+    <!-- Category Hero Banner -->
+    <div class="cat-hero" id="cat-hero">
+      <div class="cat-hero__text">
+        <h1 class="cat-hero__title" id="cat-title">Kategori</h1>
+        <p class="cat-hero__desc" id="cat-desc">En uygun fiyatlarla Trendyol'da</p>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-bar">
+      <div class="filters-bar__left">
+        <span class="filter-label">Filtrele:</span>
+        <button class="filter-chip active">Tümü</button>
+        <button class="filter-chip">İndirimli</button>
+        <button class="filter-chip">Ücretsiz Kargo</button>
+        <button class="filter-chip">Hızlı Teslimat</button>
+        <button class="filter-chip">Yeni Gelenler</button>
+      </div>
+      <div class="filters-bar__right">
+        <span class="sort-label">Sırala:</span>
+        <select class="sort-select" id="sort-select">
+          <option>Önerilen</option>
+          <option>En Çok Satan</option>
+          <option>En Düşük Fiyat</option>
+          <option>En Yüksek Fiyat</option>
+          <option>En Yeni</option>
+          <option>En Çok Değerlendirilen</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Sub-categories chips -->
+    <div class="subcat-chips" id="subcat-chips"></div>
+
+    <!-- Left sidebar + Product grid -->
+    <div class="cat-layout">
+
+      <!-- Sidebar -->
+      <aside class="cat-sidebar" id="cat-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Alt Kategoriler</div>
+          <ul class="sidebar-links" id="sidebar-links"></ul>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Fiyat Aralığı</div>
+          <div class="price-range">
+            <input type="number" class="price-input" placeholder="Min TL" id="price-min"/>
+            <span>—</span>
+            <input type="number" class="price-input" placeholder="Max TL" id="price-max"/>
+            <button class="price-apply-btn" id="price-apply">Uygula</button>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section__title">Marka</div>
+          <ul class="sidebar-links" id="sidebar-brands"></ul>
+        </div>
+      </aside>
+
+      <!-- Products -->
+      <div class="cat-products">
+        <div class="prod-result-info" id="prod-result-info"></div>
+        <div class="prod-grid prod-grid--cat" id="cat-prod-grid"></div>
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+          <button class="pg-btn active">1</button>
+          <button class="pg-btn">2</button>
+          <button class="pg-btn">3</button>
+          <button class="pg-btn">4</button>
+          <button class="pg-btn">5</button>
+          <span class="pg-dots">...</span>
+          <button class="pg-btn">24</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="ty-container">
+    <div class="footer__top">
+      <div class="footer__col footer__col--brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="32" viewBox="0 0 152 38">
+          <circle cx="19" cy="19" r="19" fill="#FF6000"/>
+          <text x="19" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="white">t</text>
+          <text x="44" y="26" font-family="'Source Sans 3',Arial,sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="-0.5">trendyol</text>
+        </svg>
+        <p>© 2025 DSM Grup Danışmanlık İletişim ve Satış Tic. A.Ş.</p>
+        <div class="footer__apps">
+          <a href="#" class="footer__app-btn">📱 App Store</a>
+          <a href="#" class="footer__app-btn">🤖 Google Play</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Kurumsal</div>
+        <a href="#">Hakkımızda</a><a href="#">Kariyer</a><a href="#">Sürdürülebilirlik</a><a href="#">İletişim</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Alışveriş</div>
+        <a href="#">Kampanya Detayları</a><a href="#">Flaş İndirimler</a><a href="#">Hediye Kartları</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Satıcı Ol</div>
+        <a href="#">Trendyol'da Satış Yap</a><a href="#">Trendyol Akademi</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Yardım</div>
+        <a href="#">Sıkça Sorulan Sorular</a><a href="#">Nasıl İade Edebilirim?</a><a href="#">Güvenli Alışveriş</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__payments">
+        <span>Ödeme Yöntemleri:</span>
+        <span class="pay-tag">VISA</span><span class="pay-tag">Mastercard</span><span class="pay-tag">Troy</span><span class="pay-tag">Havale</span>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Kullanım Koşulları</a><a href="#">Çerez Politikası</a><a href="#">Gizlilik Politikası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"><span id="toast-msg"></span></div>
+<script src="category.js"></script>
+</body>
+</html>
