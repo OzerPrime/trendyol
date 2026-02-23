@@ -1,6 +1,19 @@
 /* === TRENDYOL STATIC — main.js === */
 
-/* ---- MEGA MENU DATA (all categories + sub-links) ---- */
+/* ---- LOGIN DROPDOWN (with delay to prevent flicker) ---- */
+const userNav = document.getElementById('nav-user');
+const loginDD = userNav ? userNav.querySelector('.login-dropdown') : null;
+let ddTimer;
+if (userNav && loginDD) {
+  const open  = () => { clearTimeout(ddTimer); loginDD.classList.add('open'); };
+  const close = () => { ddTimer = setTimeout(() => loginDD.classList.remove('open'), 120); };
+  userNav.addEventListener('mouseenter', open);
+  userNav.addEventListener('mouseleave', close);
+  loginDD.addEventListener('mouseenter', open);
+  loginDD.addEventListener('mouseleave', close);
+}
+
+
 const catData = {
   kadin: {
     title: 'Kadın',

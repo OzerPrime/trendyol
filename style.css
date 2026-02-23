@@ -62,8 +62,8 @@ body{background:var(--bg)}
 
 /* Login dropdown */
 .user-nav{position:relative}
-.login-dropdown{display:none;position:absolute;top:calc(100% + 8px);right:0;width:220px;background:#fff;border:1px solid var(--border);border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:300;padding:16px}
-.user-nav:hover .login-dropdown{display:block}
+.login-dropdown{display:none;position:absolute;top:100%;right:0;width:220px;background:#fff;border:1px solid var(--border);border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:300;padding:16px;padding-top:20px}
+.login-dropdown.open{display:block}
 .login-dropdown__btn{display:block;width:100%;padding:10px;font-size:13px;font-weight:700;border-radius:4px;text-align:center;cursor:pointer;margin-bottom:8px;font-family:var(--font)}
 .login-dropdown__btn--primary{background:var(--orange);color:#fff}
 .login-dropdown__btn--primary:hover{background:var(--orange-d)}
