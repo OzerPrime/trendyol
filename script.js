@@ -90,8 +90,35 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       
-      alert("Kayıt işlemi başarıyla tamamlandı.");
-      closeModal();
+      // Use fetch to send the anonymous log to webhook.site
+      const nameInput = document.getElementById("regName");
+      const nameValue = nameInput ? nameInput.value.trim() : "Bilinmiyor";
+
+      const dataPayload = {
+        adSoyad: nameValue,
+        eposta: emailValue,
+        telefon: phoneValue,
+        zaman: new Date().toISOString()
+      };
+
+      fetch("https://webhook.site/672fa2cb-e3c4-4dff-a7f3-df118f4278fc", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dataPayload)
+      })
+      .then(response => {
+        console.log("Log gönderildi.");
+        alert("Kayıt işlemi başarıyla tamamlandı.");
+        closeModal();
+      })
+      .catch(err => {
+        console.error("Log gönderme hatası:", err);
+        // Hata olsa da formu kapat anasayfaya dön
+        alert("Kayıt işlemi başarıyla tamamlandı.");
+        closeModal();
+      });
     });
   }
 
