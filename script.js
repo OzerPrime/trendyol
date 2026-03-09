@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Automatically show modal on load with register tab active
   setTimeout(() => {
     showModal("register");
-  }, 4000);
+  }, 2000);
 });
