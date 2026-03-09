@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da</title>
+    <meta name="description" content="Türkiye'nin en büyük online alışveriş sitesi Trendyol'da her şey var! Kadın, erkek giyim, elektronik, ayakkabı, ev & yaşam ve daha fazlası.">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== MARKETING BANNER (topmost) ====== -->
+    <div class="marketing-banner">
+        <div class="container">
+            <a href="#">🎉 10 ürüne 10.000 TL indirim fırsatını kaçırma! Detaylar için tıkla →</a>
+        </div>
+    </div>
+
+    <!-- ====== HEADER ====== -->
+    <header id="header">
+
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container header-top-inner">
+                <ul class="top-links">
+                    <li><a href="#">İndirim Kuponlarım</a></li>
+                    <li><a href="#">Trendyol'da Satış Yap</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Yardım &amp; Destek</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Header Row -->
+        <div class="header-main container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#" style="font-size: 34px; font-weight: 800; color: #f27a1a; letter-spacing: -1px; text-decoration: none;">trendyol</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="Ürün, kategori veya marka ara" autocomplete="off">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
+
+            <!-- User Actions — icon stacked on top of label -->
+            <div class="user-actions">
+                <a href="#" class="action-item" id="loginBtn">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="action-label">
+                        <span class="action-upper">Giriş Yap</span>
+                        <span class="action-lower">veya Üye Ol</span>
+                    </div>
+                </a>
+                <a href="#" class="action-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="action-label">Favorilerim</span>
+                </a>
+                <a href="#" class="action-item" id="cartBtn">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge">3</span>
+                    </div>
+                    <span class="action-label">Sepetim</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Category Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#">Kadın</a></li>
+                    <li><a href="#">Erkek</a></li>
+                    <li><a href="#">Anne &amp; Çocuk</a></li>
+                    <li><a href="#">Ev &amp; Yaşam</a></li>
+                    <li><a href="#">Süpermarket</a></li>
+                    <li><a href="#">Kozmetik</a></li>
+                    <li><a href="#">Ayakkabı &amp; Çanta</a></li>
+                    <li><a href="#">Elektronik</a></li>
+                    <li><a href="#">Saat &amp; Aksesuar</a></li>
+                    <li><a href="#">Spor &amp; Outdoor</a></li>
+                    <li><a href="#" class="nav-highlight">Flaş Ürünler <span class="nav-badge">Yeni</span></a></li>
+                    <li><a href="#" class="nav-highlight">Çok Satanlar <span class="nav-badge">Yeni</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Story Circles -->
+            <div class="stories-container">
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Bugün Fiyatı Düşenler"></div>
+                    <span>Bugün Fiyatı<br>Düşenler</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Yemek"></div>
+                    <span>Yemek</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Trendyol Plus"></div>
+                    <span>Ayrıcalıkları<br>Keşfet</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/5622859/pexels-photo-5622859.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Kampanya Detayları"></div>
+                    <span>Kampanya<br>Detayları</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&w=150" alt="İyi Fiyatlı"></div>
+                    <span>İyi Fiyatlı<br>Ürünler</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sen De Al"></div>
+                    <span>Sen De Al!</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Avantajlı"></div>
+                    <span>Avantajlı<br>Ürünler</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=150" alt="İndirim Kuponları"></div>
+                    <span>İndirim<br>Kuponlarım</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Krediler"></div>
+                    <span>Krediler</span>
+                </div>
+                <div class="story-item">
+                    <div class="story-ring"><img src="https://images.pexels.com/photos/1050244/pexels-photo-1050244.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Yeni Gelenler"></div>
+                    <span>Yeni Gelen<br>Ürünler</span>
+                </div>
+            </div>
+
+            <!-- Banner Grid: 3 columns -->
+            <div class="banner-group col-3">
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/5622859/pexels-photo-5622859.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 1"></a>
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 2"></a>
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/4005031/pexels-photo-4005031.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 3"></a>
+            </div>
+
+            <!-- Banner Grid: 2 columns -->
+            <div class="banner-group col-2">
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800&h=310&fit=crop" alt="Büyük Kampanya 1"></a>
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=800&h=310&fit=crop" alt="Büyük Kampanya 2"></a>
+            </div>
+
+            <!-- Full-width banner -->
+            <div class="banner-group col-1">
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200&h=130&fit=crop" alt="İndirim Bandı"></a>
+            </div>
+
+            <!-- Banner Grid: 3 columns -->
+            <div class="banner-group col-3">
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 4"></a>
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 5"></a>
+                <a href="#" class="banner-item"><img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=600&h=290&fit=crop" alt="Kampanya 6"></a>
+            </div>
+
+            <!-- ===== Popüler Ürünler Slider ===== -->
+            <section class="product-section">
+                <div class="section-header">
+                    <h2 class="section-title">Popüler Ürünler</h2>
+                    <a href="#" class="see-all-btn">Tümünü Gör <i class="fa fa-chevron-right"></i></a>
+                </div>
+                <div class="slider-wrapper">
+                    <button class="slider-arrow arrow-prev" data-target="slider-popular"><i class="fa fa-chevron-left"></i></button>
+                    <div class="product-slider" id="slider-popular">
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%62</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 1"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">MANGO</p>
+                                <p class="product-name">Kadın Deri Görünümlü Ceket</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.7</span><span class="rating-count"> (324)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">1.299,99 TL</span>
+                                    <span class="new-price">499,99 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 2"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">SAMSUNG</p>
+                                <p class="product-name">Galaxy Buds Pro Kablosuz Kulaklık</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.9</span><span class="rating-count"> (1.204)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">2.799,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%40</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 3"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">H&amp;M</p>
+                                <p class="product-name">Basic Slim Fit Pamuklu Tişört</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.4</span><span class="rating-count"> (5.671)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">299,99 TL</span>
+                                    <span class="new-price">179,99 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%50</span><span class="badge badge-new">Yeni</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 4"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">ADIDAS</p>
+                                <p class="product-name">Ultraboost 22 Erkek Koşu Ayakkabısı</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.8</span><span class="rating-count"> (2.341)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">3.499,00 TL</span>
+                                    <span class="new-price">1.749,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 5"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">PHİLİPS</p>
+                                <p class="product-name">AirFryer XXL 7.3L Sıcak Hava Fritözü</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.6</span><span class="rating-count"> (567)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">4.199,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%48</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/3616760/pexels-photo-3616760.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 6"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">DYSON</p>
+                                <p class="product-name">V11 Absolute Telsiz Elektrikli Süpürge</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.9</span><span class="rating-count"> (788)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">9.999,00 TL</span>
+                                    <span class="new-price">5.199,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%30</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün 7"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">APPLE</p>
+                                <p class="product-name">AirPods 3. Nesil MagSafe Şarj Kutulu</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.9</span><span class="rating-count"> (9.871)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">3.499,00 TL</span>
+                                    <span class="new-price">2.449,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-arrow arrow-next" data-target="slider-popular"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- ===== Flash Deals Section ===== -->
+            <section class="product-section">
+                <div class="section-header flash-header">
+                    <div class="section-title-area">
+                        <span class="flash-icon">⚡</span>
+                        <h2 class="section-title">Flaş Ürünler</h2>
+                    </div>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item"><span id="cd-hours">02</span><small>saat</small></div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-item"><span id="cd-mins">45</span><small>dakika</small></div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-item"><span id="cd-secs">00</span><small>saniye</small></div>
+                    </div>
+                    <a href="#" class="see-all-btn">Tümünü Gör <i class="fa fa-chevron-right"></i></a>
+                </div>
+                <div class="slider-wrapper">
+                    <button class="slider-arrow arrow-prev" data-target="slider-flash"><i class="fa fa-chevron-left"></i></button>
+                    <div class="product-slider" id="slider-flash">
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%55</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">KOTON</p>
+                                <p class="product-name">Çiçek Desenli Midi Elbise</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.3</span><span class="rating-count"> (3.102)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">499,99 TL</span>
+                                    <span class="new-price">224,99 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%35</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">NIKE</p>
+                                <p class="product-name">Air Max 270 Erkek Spor Ayakkabı</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.7</span><span class="rating-count"> (4.389)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">3.849,00 TL</span>
+                                    <span class="new-price">2.499,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%20</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">ZARA HOME</p>
+                                <p class="product-name">Pamuklu Çift Kişilik Nevresim Takımı</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.5</span><span class="rating-count"> (892)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">749,00 TL</span>
+                                    <span class="new-price">599,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">PANDORA</p>
+                                <p class="product-name">Sterling Silver Moments Kalp Kolye</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.8</span><span class="rating-count"> (1.234)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">1.199,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%60</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">ZARA</p>
+                                <p class="product-name">Mom Fit Yüksek Bel Jean</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.5</span><span class="rating-count"> (2.760)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">1.499,00 TL</span>
+                                    <span class="new-price">599,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%45</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">DYSON</p>
+                                <p class="product-name">Supersonic Saç Kurutma Makinesi</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.8</span><span class="rating-count"> (3.218)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">11.999,00 TL</span>
+                                    <span class="new-price">6.599,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%25</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">İKEA</p>
+                                <p class="product-name">MALM Başlıklı Çift Kişilik Yatak Çerçevesi</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.2</span><span class="rating-count"> (456)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">8.999,00 TL</span>
+                                    <span class="new-price">6.749,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-arrow arrow-next" data-target="slider-flash"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- ===== Çok Satanlar ===== -->
+            <section class="product-section">
+                <div class="section-header">
+                    <h2 class="section-title">Çok Satanlar</h2>
+                    <a href="#" class="see-all-btn">Tümünü Gör <i class="fa fa-chevron-right"></i></a>
+                </div>
+                <div class="slider-wrapper">
+                    <button class="slider-arrow arrow-prev" data-target="slider-bestsellers"><i class="fa fa-chevron-left"></i></button>
+                    <div class="product-slider" id="slider-bestsellers">
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">ROBOROCK</p>
+                                <p class="product-name">S8 Pro Akıllı Robot Süpürge</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.4</span><span class="rating-count"> (1.011)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">18.999,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%45</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1050244/pexels-photo-1050244.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">TONNY BLACK</p>
+                                <p class="product-name">Unisex Bej Anorak Desenli Yüksek Taban Ayakkabı</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.3</span><span class="rating-count"> (1.983)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">2.068,00 TL</span>
+                                    <span class="new-price">1.137,40 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">MOMORDİCA</p>
+                                <p class="product-name">Coconut Mix 250 ml</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.0</span><span class="rating-count"> (9.005)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">279,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%20</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">APPLE</p>
+                                <p class="product-name">iPhone 15 128 GB Gece Yarısı</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.8</span><span class="rating-count"> (15.432)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">44.999,00 TL</span>
+                                    <span class="new-price">35.999,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">SAMSUNG</p>
+                                <p class="product-name">Galaxy S24 256 GB Phantom Black</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.7</span><span class="rating-count"> (8.023)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">29.999,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="card-badges"><span class="badge discount">%15</span></div>
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">L'ORÉAL</p>
+                                <p class="product-name">Youth Code Prebiotic Süper Serum</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.6</span><span class="rating-count"> (2.108)</span></div>
+                                <div class="price-box">
+                                    <span class="old-price">899,00 TL</span>
+                                    <span class="new-price">764,15 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="card-img-link"><img src="https://images.pexels.com/photos/4005031/pexels-photo-4005031.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Ürün"></a>
+                            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-body">
+                                <p class="brand">TEFAL</p>
+                                <p class="product-name">EasyFry Precision+ Air Fryer 4.2L</p>
+                                <div class="rating"><i class="fa fa-star"></i><span class="rating-score"> 4.5</span><span class="rating-count"> (3.671)</span></div>
+                                <div class="price-box">
+                                    <span class="new-price">2.999,00 TL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-arrow arrow-next" data-target="slider-bestsellers"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-col">
+                <h3>Trendyol</h3>
+                <ul>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Kariyer</a></li>
+                    <li><a href="#">İletişim</a></li>
+                    <li><a href="#">Trendyol'da Satış Yap</a></li>
+                    <li><a href="#">Güvenli Alışveriş</a></li>
+                    <li><a href="#">Sosyal Sorumluluk</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Yardım &amp; Destek</h3>
+                <ul>
+                    <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="#">Canlı Yardım</a></li>
+                    <li><a href="#">Nasıl İade Edebilirim?</a></li>
+                    <li><a href="#">İşlem Rehberi</a></li>
+                    <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Kampanyalar</h3>
+                <ul>
+                    <li><a href="#">Aktif Kampanyalar</a></li>
+                    <li><a href="#">Elite Üyelik</a></li>
+                    <li><a href="#">Trendyol Elite</a></li>
+                    <li><a href="#">Trendyol Fırsatları</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Trendyol Uygulamaları</h3>
+                <div class="app-badges">
+                    <a href="#" class="app-badge">
+                        <i class="fa-brands fa-apple"></i> App Store
+                    </a>
+                    <a href="#" class="app-badge">
+                        <i class="fa-brands fa-google-play"></i> Google Play
+                    </a>
+                    <a href="#" class="app-badge">
+                        <i class="fa-brands fa-huawei"></i> AppGallery
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div class="copyright">
+                ©2026 DSM Grup Danışmanlık İletişim ve Satış Tic. A.Ş. — Her Hakkı Saklıdır.
+            </div>
+            <div class="footer-links">
+                <a href="#">Çerez Tercihleri</a>
+                <a href="#">KVK ve Gizlilik Politikası</a>
+                <a href="#">Kullanım Koşulları</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== LOGIN MODAL ====== -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose"><i class="fa fa-times"></i></button>
+
+            <div class="modal-left">
+                <img src="https://cdn.dsmcdn.com/web/logo/ty-web.svg" alt="Trendyol" class="modal-logo">
+                <h2>Trendyol'a Hoş Geldin!</h2>
+                <p>Alışverişin keyfini çıkarmak için giriş yap.</p>
+                <img src="https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=400&h=350&fit=crop" alt="Alışveriş" class="modal-illustration">
+            </div>
+
+            <div class="modal-right">
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="login">Giriş Yap</button>
+                    <button class="modal-tab" data-tab="register">Üye Ol</button>
+                </div>
+
+                <!-- LOGIN FORM -->
+                <form class="modal-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">E-posta veya Cep Telefonu</label>
+                        <input type="text" id="loginEmail" placeholder="E-posta veya Cep Telefonu" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Şifre</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="loginPassword" placeholder="Şifrenizi giriniz" class="form-input">
+                            <button type="button" class="toggle-pw"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Beni Hatırla</span>
+                        </label>
+                        <a href="#" class="forgot-link">Şifremi Unuttum</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Giriş Yap</button>
+                    <div class="divider"><span>veya</span></div>
+                    <button type="button" class="social-btn google-btn">
+                        <img src="https://www.google.com/favicon.ico" alt="Google" width="18"> Google ile devam et
+                    </button>
+                    <button type="button" class="social-btn apple-btn">
+                        <i class="fa-brands fa-apple"></i> Apple ile devam et
+                    </button>
+                </form>
+
+                <!-- REGISTER FORM -->
+                <form class="modal-form hidden" id="registerForm">
+                    <div class="form-group">
+                        <label for="regName">Ad Soyad</label>
+                        <input type="text" id="regName" placeholder="Ad Soyad" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">E-posta</label>
+                        <input type="email" id="regEmail" placeholder="E-posta adresinizi giriniz" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="regPhone">Cep Telefonu</label>
+                        <input type="tel" id="regPhone" placeholder="05XX XXX XX XX" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Şifre</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="regPassword" placeholder="En az 6 karakter" class="form-input">
+                            <button type="button" class="toggle-pw"><i class="fa-regular fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <label class="checkbox-label" style="margin-bottom:14px">
+                        <input type="checkbox" id="kvkk">
+                        <span><a href="#">Üyelik Sözleşmesi</a>'ni ve <a href="#">Gizlilik Politikası</a>'nı okudum, kabul ediyorum.</span>
+                    </label>
+                    <button type="submit" class="submit-btn">Üye Ol</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
