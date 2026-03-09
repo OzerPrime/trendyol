@@ -58,6 +58,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Form Validation Logic
+  if (registerForm) {
+    registerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      const emailInput = document.getElementById("regEmail");
+      const phoneInput = document.getElementById("regPhone");
+      const emailValue = emailInput.value.trim();
+      // Remove any spaces the user might have entered
+      const phoneValue = phoneInput.value.trim().replace(/\s+/g, '');
+      
+      // Basic Email Validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailValue)) {
+        alert("Lütfen geçerli bir e-posta adresi (ör: example@gmail.com) giriniz.");
+        return;
+      }
+      
+      // Phone Validation (Turkish phone format: 05XXXXXXXXX or 5XXXXXXXXX)
+      const phoneRegex = /^(05|5)\d{9}$/;
+      if (!phoneRegex.test(phoneValue)) {
+        alert("Lütfen geçerli bir cep telefonu numarası giriniz (ör: 05XX XXX XX XX).");
+        return;
+      }
+      
+      alert("Kayıt işlemi başarıyla tamamlandı.");
+      closeModal();
+    });
+  }
+
   // Automatically show modal on load with register tab active
   setTimeout(() => {
     showModal("register");
