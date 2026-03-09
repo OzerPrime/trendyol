@@ -82,6 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Lütfen geçerli bir cep telefonu numarası giriniz (ör: 05XX XXX XX XX).");
         return;
       }
+
+      // Checkbox (KVKK/Agreement) Validation
+      const kvkkCheckbox = document.getElementById("kvkk");
+      if (!kvkkCheckbox.checked) {
+        alert("Üye olabilmek için Üyelik Sözleşmesi ve Gizlilik Politikası'nı kabul etmelisiniz.");
+        return;
+      }
       
       alert("Kayıt işlemi başarıyla tamamlandı.");
       closeModal();
